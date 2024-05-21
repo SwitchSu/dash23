@@ -1,0 +1,629 @@
+.main {
+  background: url(../img/bg/dightbg.jpg) center bottom;
+}
+
+.newsArea {
+  width: 100%;
+  padding: 130px 0 100px;
+  background-color: blue;
+  background: url(../img/bg/newsbg.jpg);
+}
+
+.newsArea .news {
+  max-width: 1170px;
+  display: flex;
+}
+
+.n-left {
+  width: 250px;
+}
+
+.n-left .title {
+  writing-mode: vertical-lr;
+  padding-bottom: 100px;
+}
+
+.n-left .title p {
+  padding: 0;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 80px;
+  letter-spacing: 5px;
+  -webkit-text-stroke: 1px black;
+  text-shadow: -5px 3px 0 black, 0px -1px 0 black;
+  position: relative;
+}
+
+.n-left .title p::before {
+  content: "#NEWS";
+  color: transparent;
+  text-shadow: none;
+  -webkit-text-stroke: transparent;
+  background: url(../img/main/dot.jpg);
+  background-clip: text;
+  position: absolute;
+}
+
+.n-left .title span {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.n-left .newsarrow {
+  display: flex;
+  gap: 5px;
+}
+
+.n-left .newsarrow .newsbtn {
+  width: 42px;
+  height: 42px;
+  background-color: #fff;
+  border: 2px solid black;
+  text-align: center;
+  line-height: 40px;
+}
+
+.n-right {
+  width: calc(100% - 250px);
+}
+.n-right .cards{
+  display: flex;
+}
+.n-right .cards .card {
+  width: 307px;
+  padding: 0 10px 120px;
+}
+
+.n-right .cards .card .card-content {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.card-content a {
+  display: inline-block;
+}
+
+.card-content a img {
+  width: 100%;
+}
+.card-content .txt-content{
+  padding: 30px 35px;
+  background: url(../img/main/dot_blue.png) no-repeat bottom right;
+  position: relative;
+}
+.card-content .txt-content::before{
+  content: '';
+  display: block;
+  width: calc(100% - 28px);
+  height: calc(100% - 25px);
+  position: absolute;
+  top: 10px;
+  left: 14px;
+  border: 1px solid #007cdb;
+  border-top: none;
+  border-radius: 0 0 13px 13px;
+}
+.card-content .txt-content::after{
+  content: '';
+  display: block;
+  width: calc(100% - 18px);
+  height: calc(100% - 20px);
+  position: absolute;
+  top: 10px;
+  left: 9px;
+  border: 1px solid #007cdb;
+  border-top: none;
+  border-radius: 0 0 15px 15px;
+}
+.card-content .txt-content .title{
+  display: flex;
+}
+.card-content .txt-content .title .date{
+  font-size: 32px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  padding-right: 10px;
+}
+.card-content .txt-content .title .date > span{
+  padding-left: 6px;
+  font-size: 15px;
+  word-break: break-all;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  display: inline-block;
+  line-height: 1;
+}
+.card-content .txt-content .title .date > span span{
+  font-size: 12px;
+  display: block;
+}
+.card-content .txt-content .title .sold{
+  padding: 5px 5px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #007cdb;
+  letter-spacing: 0;
+  display: flex;
+  align-items: flex-end;
+}
+.card-content .txt-content .title .sold::before{
+  content: '';
+  display: inline-block;
+  background-color: #007cdb;
+  width: 30px;
+  height: 2px;
+  margin-bottom: 3px;
+  margin-right: 10px;
+}
+.card-content .txt-content h3{
+  font-size: 18px;
+  font-weight: 500;
+  padding: 15px 0;
+}
+.card-content .txt-content p{
+  font-size: 14px;
+  line-height: 20px;
+  height: 40px;
+  color: #626262;
+}
+.card-content .txt-content a{
+  display: block;
+  margin-top: 25px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  color: #007cdb;
+  letter-spacing: 1px;
+}
+.roomArea {
+  position: relative;
+}
+
+.roomArea::before {
+  content: '';
+  width: 100%;
+  height: 50%;
+  background-color: #007CDB;
+  border-bottom: 14px solid white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.roomArea::after {
+  content: '';
+  width: 100%;
+  height: 50%;
+  background-image: url(../img/main/yellowbg.png.jpg);
+  border-bottom: 14px solid white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.roomArea>.max {
+  max-width: 1170px;
+  padding-top: 170px;
+  position: relative;
+  z-index: 2;
+}
+
+.roomArea>.max .people {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0, -70px);
+  z-index: 2;
+}
+
+.roomArea>.max .txt-1 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(200%, 20%);
+}
+
+.roomArea>.max .txt-2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translate(-200%, -15%);
+}
+
+.roomArea>.max .roombox {
+  position: relative;
+  z-index: 1;
+}
+
+.roomArea>.max .roombox .roomtitle {
+  position: absolute;
+  right: 50px;
+  top: 0;
+  transform: translate(0, -70%);
+  z-index: 2;
+}
+
+.roomArea>.max .roombox .roomtitle span {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 80px;
+  font-weight: 600;
+  text-shadow: 5px 3px 0 black, 0 -1px 0 black;
+  -webkit-text-stroke: 1px black;
+  line-height: 80px;
+  letter-spacing: 5px;
+  position: relative;
+}
+
+.roomArea>.max .roombox .roomtitle span::before {
+  content: "#STAY ROOM";
+  color: transparent;
+  text-shadow: none;
+  -webkit-text-stroke: transparent;
+  background: url(../img/main/dot.jpg);
+  background-clip: text;
+  position: absolute;
+}
+
+.roomArea>.max .roombox .arrows .arrow {
+  width: 42px;
+  height: 42px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #fff;
+  margin: 0 5px 5px 0;
+  border: 2px solid black;
+  position: absolute;
+  z-index: 4;
+  transform: translate(0px, -270%);
+}
+
+.roomArea>.max .roombox .arrows .arrow-l {
+  left: 0;
+  top: 50%;
+
+}
+
+.roomArea>.max .roombox .arrows .arrow-r {
+  right: 0;
+  top: 50%;
+}
+
+.roomArea>.max .roombox .rooms {
+  border: 1px solid transparent;
+}
+
+.roomArea>.max .roombox .rooms .room {
+  margin: 0 36px 200px;
+  position: relative;
+}
+
+.roomArea>.max .roombox .room img {
+  padding: 12px;
+  width: 100%;
+  background-color: #fff;
+  border: 2px solid black;
+}
+
+.roomArea>.max .roombox .room .roomtxt {
+  width: 535px;
+  padding: 35px 35px 50px;
+  background-color: #fff;
+  border: 2px solid black;
+  box-shadow: 13px 13px 0 rgba(0, 0, 0, 0.1);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(-36px, 50%);
+}
+
+.roomArea>.max .roombox .room .roomtxt h3 {
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+}
+
+.roomArea>.max .roombox .room .roomtxt h3 span {
+  color: #007cdb;
+  font-family: "Oswald", sans-serif;
+}
+
+.roomArea>.max .roombox .room .roomtxt h3 span i {
+  font-size: 14px;
+  padding-right: 3px;
+}
+
+.roomArea>.max .roombox .room .roomtxt p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #626262;
+}
+
+.roomArea>.max .roombox .room .roomtxt p span {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #c9c9c9;
+}
+
+.roomArea>.max .roombox .room .roomtxt p span:last-child {
+  border-right: none;
+}
+
+.roomArea>.max .roombox .room .roomtxt .btn {
+  position: absolute;
+  bottom: 0;
+  right: -2px;
+}
+
+.roomArea>.max .roombox .room .roomtxt .btn a {
+  display: inline-block;
+  width: 120px;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  background-color: black;
+  font-family: "Oswald", "Noto Sans TC", sans-serif;
+}
+
+.run {
+  padding: 40px 0 80px;
+  font-size: 58px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.run .runtxt-1 {
+  transform: translate(-30%, 0);
+}
+
+.run .runtxt-2 {
+  transform: translate(-35%, 0);
+}
+
+.run .runtxt-1 span,
+.run .runtxt-2 span:nth-child(2) {
+  color: #007cdb;
+  padding: 0 20px;
+}
+
+.run .runtxt-2 span,
+.run .runtxt-1 span:nth-child(2) {
+  color: #ffce45;
+  padding: 0 20px;
+}
+
+.fac {
+  position: relative;
+}
+
+.fac>img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.factitle {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+  padding-bottom: 40px;
+}
+
+.factitle .titlename {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 80px;
+  font-weight: 600;
+  -webkit-text-stroke: 1px black;
+  text-shadow: 5px 3px 0 black, 0 -1px 0 black;
+  line-height: 80px;
+  letter-spacing: 5px;
+}
+
+.factitle .titlename::before {
+  content: "#FACILITIES";
+  position: absolute;
+  color: transparent;
+  text-shadow: none;
+  background: url(../img/main/dot.jpg);
+  background-clip: text;
+}
+
+.factitle h2 {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 50px;
+  letter-spacing: 5px;
+}
+
+.facthings {
+  position: relative;
+  z-index: 2;
+}
+
+.facthings .things {
+  border-top: 1px solid black;
+  padding-left: 340px;
+}
+
+.facthings .thing {
+  display: flex;
+  padding: 60px 0;
+  position: relative;
+}
+
+.facthings .thing span {
+  color: #fff;
+  font-size: 50px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  -webkit-text-stroke: 1px black;
+  text-shadow: 5px 3px 0 black;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(0, -50%);
+}
+
+.facthings .thing h3 {
+  font-size: 28px;
+  font-weight: 500;
+  min-width: 250px;
+}
+
+.facthings .thing p {
+  font-weight: 400;
+  padding-right: 100px;
+  flex-grow: 1;
+}
+
+.facthings .thing a {
+  display: block;
+  width: 185px;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  font-family: "Oswald", "Noto Sans TC", sans-serif;
+  background-color: black;
+}
+
+.about {
+  padding-bottom: 100px;
+  position: relative;
+}
+
+.about .max .dash {
+  position: relative;
+  z-index: 3;
+  transform: translate(0, 50px);
+}
+
+.about .max .dash p {
+  font-family: "Oswald", sans-serif;
+  text-shadow: 5px 3px 0 black, 2px 2px 0 black;
+  -webkit-text-stroke: 1px black;
+  font-style: italic;
+  font-size: 95px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 95px;
+  letter-spacing: 5px;
+  padding-bottom: 0;
+}
+
+.about .max .dash p::before {
+  content: "#IT'S NOT JUST DASH";
+  width: 100%;
+  text-shadow: none;
+  color: transparent;
+  -webkit-text-stroke: transparent;
+  background: url(../img/main/dot.jpg);
+  background-clip: text;
+  position: absolute;
+  right: 0;
+}
+
+.about .max .aboutdash {
+  position: relative;
+  z-index: 2;
+}
+
+.about .max .aboutdash img {
+  width: 100%;
+}
+
+.about .max .aboutdash .txtbox {
+  display: flex;
+  margin: auto;
+  max-width: 1170px;
+  padding-top: 70px;
+}
+
+.txtbox .txt-left {
+  width: 45%;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.txtbox .txt-right {
+  width: 55%;
+}
+
+.txtbox .txt-right h1 {
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 25px;
+}
+
+.txtbox .txt-right span {
+  color: #626262;
+}
+
+.txtbox .txt-right a {
+  display: block;
+  width: 185px;
+  padding: 10px;
+  margin-top: 40px;
+  color: #fff;
+  text-align: center;
+  font-family: "Oswald", "Noto Sans TC", sans-serif;
+  background-color: black;
+}
+
+.down {
+  width: 100%;
+  /* background-color: aqua; */
+  position: relative;
+}
+
+.d-all {
+  width: 50%;
+  background-color: #fff;
+  border: 1px solid black;
+}
+
+.d-right {
+  position: absolute;
+  bottom: -105px;
+  right: 1px;
+  z-index: 10;
+}
+
+.d-all img {
+  width: 100%;
+}
+
+.txt {
+  text-align: center;
+}
+
+.txt a {
+  display: block;
+  padding: 35px 20px;
+  font-size: 22px;
+  font-weight: 500;
+  color: black;
+}
+
+.txt a span {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 22px;
+  font-family: "Oswald", sans-serif;
+
+}

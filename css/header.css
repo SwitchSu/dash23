@@ -1,0 +1,100 @@
+header {
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.nav {
+  max-width: 1756px;
+  padding: 20px 0;
+  display: flex;
+  margin: auto;
+  border-bottom: 1px solid black;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 225px;
+}
+
+.logo a {
+  width: 100%;
+  height: 45px;
+  display: block;
+  background-image: url(../img/icon/logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.nav .nav-r {
+  display: flex;
+}
+
+.nav .nav-r .btn {
+  width: 160px;
+
+}
+
+.nav .nav-r .btn a {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  background-color: black;
+  padding: 10px 0;
+}
+
+.nav .nav-r .btn a span {
+  color: white;
+}
+
+.nav .nav-r .language {
+  padding: 10px 0;
+}
+
+.nav .nav-r .language a {
+  color: black;
+  display: inline-block;
+  padding: 0px 20px;
+  border-right: 1px solid black;
+}
+
+.nav .nav-r .ham {
+  width: 60px;
+  height: 40px;
+  position: relative;
+}
+
+.nav .nav-r .ham span::before {
+  content: '';
+  width: 26px;
+  height: 2px;
+  background-color: black;
+  display: inline-block;
+  position: absolute;
+  bottom: 7px;
+}
+
+.nav .nav-r .ham span {
+  width: 26px;
+  height: 2px;
+  background-color: black;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav .nav-r .ham span::after {
+  content: '';
+  width: 26px;
+  height: 2px;
+  background-color: black;
+  display: inline-block;
+  position: absolute;
+  top: 7px;
+}

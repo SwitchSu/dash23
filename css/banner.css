@@ -1,0 +1,53 @@
+.bannerArea{
+  padding-top: 103px;
+  background: url(../img/bg/dight01.png) no-repeat left top, url(../img/bg/bannerbg.jpg) no-repeat right bottom #FFCE45;
+}
+.banner{
+  background-color: white;
+  /* max-width: 1756px; */
+  border: 2px solid black;
+  padding: 12px;
+  /* margin: auto; */
+  box-shadow: 13px 13px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.pics{
+  /* width: 100%; */
+}
+.pics img{
+  width: 100%;
+}
+.gonext{
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+  transform: translate(150%, 0);
+  color: white;
+  font-size: 32px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  text-shadow: -3px 2px 0 black, 0px -1px 0 black;
+  writing-mode: vertical-lr;
+  cursor: pointer;
+}
+.banner .arrows{
+  position: absolute;
+  left: -30px;
+  bottom: 60px;
+}
+.banner .arrows .arrow{
+  width: 55px;
+  height: 55px;
+  background-color: #fff;
+  font-size: 20px;
+  margin-bottom: 5px;
+  box-shadow: 5px 5px 0 black;
+  text-align: center;
+  line-height: 50px;
+}
+.banner .arrows .arrow .fa-angle-left{
+  transform: rotate(90deg);
+}
+.banner .arrows .arrow .fa-angle-right{
+  transform: rotate(90deg);
+}
